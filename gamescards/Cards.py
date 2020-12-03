@@ -10,7 +10,8 @@ class Cards:
     def __str__(self):
         return f"{self.value} {self.suit}"
 
-    def __gt__(self, other):    #מלחמה
+        # fight
+    def __gt__(self, other):
         in1 = self.volume
         in2 = other.volume
         if in1 > in2:

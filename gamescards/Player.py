@@ -1,5 +1,4 @@
 from gamescards.DeckOfCards import DeckOfCards
-from gamescards.Cards import Cards
 from random import *
 
 
@@ -15,7 +14,7 @@ class Player:
 
     def set_hand(self, num_cards=10):
         for i in range(num_cards):
-            x = self.lst.pop(randint(0,len(self.lst)-1))
+            x = self.lst.pop(randint(0, len(self.lst)-1))
             self.player_hand.append(x)
 
     def get_card(self):
